@@ -1,0 +1,84 @@
+{
+  "dataset": {
+    "orders_analyzed": 95824,
+    "first_order_customers": 92733,
+    "date_min": "2016-09",
+    "date_max": "2018-08",
+    "share_with_text": 0.4234534145934213
+  },
+  "stage_a_delay_to_low_score": {
+    "beta": 2.492229711085235,
+    "se": 0.0395923854800348,
+    "odds_ratio": 12.088199285798382,
+    "or_ci": [
+      11.185615646079045,
+      13.063613715745577
+    ],
+    "att_pp": 44.39092269251065,
+    "att_ci_pp": [
+      42.50928726897125,
+      46.155301678723404
+    ],
+    "risk_ratio": 5.58797565270969,
+    "evalue_point": 10.65132397596048,
+    "risk_ratio_ci_low": 5.393501265000435,
+    "evalue_ci": 10.261391427130313,
+    "n": 95824,
+    "n_late": 7661,
+    "late_rate": 0.07994865586909333,
+    "low_rate_late": 0.5406604881869208,
+    "low_rate_ontime": 0.09221555527829135,
+    "share_late_orders_over_3d": 0.6559195927424618,
+    "excess_low_total_bin_model": 3419.6984088514296,
+    "share_excess_low_from_over_3d": 0.9211651971081593
+  },
+  "seller_fixed_effects_check": {
+    "late_effect_pp": 43.45946419423325,
+    "ci_pp": [
+      42.07174118499648,
+      44.847187203470014
+    ],
+    "n_sellers": 2953
+  },
+  "stage_b_low_score_to_repeat": {
+    "gamma": -0.17804680559464256,
+    "se": 0.09721505162155163,
+    "odds_ratio": 0.8369032508177123,
+    "or_ci": [
+      0.6917101242121894,
+      1.0125730804171338
+    ],
+    "p_value": 0.06702987692082119,
+    "repeat_rate_overall": 0.01878381237343972,
+    "repeat_rate_low": 0.015635179153094463,
+    "repeat_rate_other": 0.01929288673548206,
+    "repeat_drop_pp": 0.2985091399209811,
+    "repeat_drop_ci_pp": [
+      -0.021179017336023603,
+      0.5761128685058424
+    ],
+    "avg_next_order_value": 148.7639020696618,
+    "n": 66174,
+    "n_repeaters": 1243
+  },
+  "revenue_chain": {
+    "excess_low_score_orders": 3419.698408851429,
+    "revenue_at_risk_brl": 1518.5986197263128,
+    "revenue_at_risk_ci_brl": [
+      -107.74352337137438,
+      2930.8456255347196
+    ],
+    "gmv_of_late_orders_brl": 1312254.43,
+    "gmv_total_brl": 15292652.17,
+    "per_excess_low_score_brl": 0.44407384458103805
+  },
+  "survival_meta": {
+    "n_customers": 92733,
+    "n_repeaters": 1981
+  },
+  "experiment_defaults": {
+    "baseline_low_rate_late": 0.5406604881869208,
+    "baseline_late_rate": 0.07994865586909333,
+    "n_samples_example": 596.0
+  }
+}

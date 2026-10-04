@@ -1,0 +1,6 @@
+# Extra dependencies to rebuild data/processed/ from the raw CSVs (not needed to run the app)
+-r requirements.txt
+statsmodels>=0.14
+lifelines>=0.28
+duckdb>=1.0
+pytest>=8

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+# raw Olist CSVs are large (geolocation alone is ~60 MB): download them yourself
+data/raw/*.csv
+!data/raw/README.md
